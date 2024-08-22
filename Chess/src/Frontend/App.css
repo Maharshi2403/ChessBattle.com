@@ -1,0 +1,146 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: x-large;
+  font-style: italic;
+  font-stretch: expanded;
+  font-weight: 800;
+  float: left;
+  margin-right: 20px;
+}
+
+.nav {
+  position: fixed;
+  display: inline;
+  background-color: #060311;
+  color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: filter 0.3s;
+}
+
+.nav:hover {
+  filter: drop-shadow(0 0 2em #007cf8);
+}
+
+.navleft {
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.menuButton {
+  background-color: #007cf8;
+}
+
+.macClose {
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+.macClose:hover {
+  transform: scale(1.3);
+}
+.nav-right {
+  width: 50%;
+  float: right;
+  margin-right: 15px;
+}
+.nav-left {
+  width: 50%;
+  float: left;
+}
+
+.mac-buttons {
+  float: right;
+  display: flex;
+  gap: 8px; /* Space between buttons */
+  padding: 10px;
+}
+
+.mac-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Slight border for depth */
+  transition: 0.3s ease;
+}
+
+.close {
+  background-color: #ff605c; /* Red for close */
+}
+.close:hover {
+  transform: scale(1.4);
+}
+
+.minimize {
+  background-color: #ffbd44; /* Yellow for minimize */
+}
+.minimize:hover {
+  transform: scale(1.4);
+}
+
+.maximize {
+  background-color: #00ca4e; /* Green for maximize */
+}
+.maximize:hover {
+  transform: scale(1.4);
+}
+
+.chessBoard {
+  position: relative;
+  width: 750px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #242428;
+  border: 0.01px solid rgb(78, 78, 78);
+  border-radius: 15px;
+  top: 30px;
+  height: 700px;
+}
+
+.Board {
+  position: absolute; /* Allows positioning relative to .chessBoard */
+  top: 30px; /* Leaves 20px space from the top */
+  left: 0; /* Aligns to the left edge of .chessBoard */
+  right: 0; /* Aligns to the right edge of .chessBoard */
+  bottom: 0; /* Aligns to the bottom edge of .chessBoard */
+  border: 0.01px solid rgb(78, 78, 78);
+  background-color: aliceblue;
+  border-radius: 25px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
