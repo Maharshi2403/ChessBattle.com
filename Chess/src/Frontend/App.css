@@ -101,14 +101,14 @@
 
 .chessBoard {
   position: relative;
-  width: 750px;
+  width: 650px;
   margin-left: 10%;
   margin-right: 10%;
   background-color: #242428;
   border: 0.01px solid rgb(78, 78, 78);
   border-radius: 15px;
   top: 30px;
-  height: 700px;
+  height: 680px;
 }
 
 .Board {
